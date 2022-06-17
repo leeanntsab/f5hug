@@ -6,7 +6,7 @@ Previously you should have received an email to access the shared Distributed Cl
 Start by logging into Distributed Cloud Console.  You should have previously received an email to create an account.
 
 
-#. Please log into your assigned Distributed Cloud tenant. https://f5-xc-lab-mcn.console.ves.volterra.io 
+#. Please log into your assigned Distributed Cloud tenant. https://f5-xc-lab-mcn.console.ves.volterra.io
 
    .. note:: The Distributed Cloud GUI has a relatively short timeout. This is not configurable. We have an enhancement request to allow this to be configured.
 
@@ -19,10 +19,10 @@ Start by logging into Distributed Cloud Console.  You should have previously rec
 
 #. Several tooltips will appear.  You can close these out.
 
-#. Click on "Account Settings" by expanding the "Account" icon in the top right of the screen and 
-   clicking on "Account Settings".  In the resulting window you can observe the **Work domains and skill level** section and 
+#. Click on "Account Settings" by expanding the "Account" icon in the top right of the screen and
+   clicking on "Account Settings".  In the resulting window you can observe the **Work domains and skill level** section and
    other administrative functions.
-   
+
 .. note::
    *For the purposes of this lab, permissions have been restricted to lab operations.  As some menus will be locked and not visible.*
 
@@ -38,10 +38,10 @@ Start by logging into Distributed Cloud Console.  You should have previously rec
 #. Click on the **Select Service** in the left-hand navigation. In the resulting fly out navigation, click **Load Balancers**.
 
 #. In the **Load Balancers** configuration screen observe the URL. In the URI path, locate the **<adjective-animal>** namespace that you have
-   been assigned. It will be located in the portion of the URI path between */namespaces/* and */sites/* as shown in this example 
+   been assigned. It will be located in the portion of the URI path between */namespaces/* and */sites/* as shown in this example
    **…/namespaces/<namespace>/sites/…**. Note the namespace as it will be used throughout the lab tasks that follow.
 
-   .. note::                                                                               
+   .. note::
       *Administratively, there are other ways to find namespaces. Due to access and permissionrestrictions for this particular lab, those menus are not available.*
 
 |intro008|

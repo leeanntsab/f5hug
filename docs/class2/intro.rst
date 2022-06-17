@@ -1,13 +1,13 @@
 Introduction: Accessing F5 Distributed Cloud Console
 ====================================================
 
-Welcome to this F5 Distributed Cloud Lab. The following tasks will guide you through the initial 
-access requirements for this multi-part lab.  Lab attendees should have received an invitation 
-(which requests you update your password for access) email to the lab environment. Please check 
+Welcome to this F5 Distributed Cloud Lab. The following tasks will guide you through the initial
+access requirements for this multi-part lab.  Lab attendees should have received an invitation
+(which requests you update your password for access) email to the lab environment. Please check
 the email address used for course registration and its associated spam folders to see if the
 invitation email has been received.  If you have not received an email, please contact a member
 of the lab team.
- 
+
 The F5 Distributed Cloud Console, where a majority of all lab tasks will be conducted, is a SaaS
 based control-plane for services which provides a GUI and API for managing network, security, and
 compute services. The F5 Distributed Cloud Console can manage "sites" in existing on-premises,
@@ -45,7 +45,7 @@ throughout the lab tasks that follow.
 * Delegated Domain: **lab-sec.f5demos.com**
 
 After following the invitation email's instructions to **Update Password**, proceed to the first
-step below to access the F5 Distributed Cloud Lab Tenant. 
+step below to access the F5 Distributed Cloud Lab Tenant.
 
 +----------------------------------------------------------------------------------------------+
 | 1. Please log into the F5 Distributed Cloud Lab Tenant with your user ID (email) & password. |

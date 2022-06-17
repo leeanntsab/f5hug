@@ -1,16 +1,16 @@
-Lab 3: Human Like Automation 
+Lab 3: Human Like Automation
 ==============================
 
 **Run this lab from the JUMPHOST**
 
-In this test we will replicate a more "human like" automation that fully renders the page by remotely controlling the Chrome browser.   
+In this test we will replicate a more "human like" automation that fully renders the page by remotely controlling the Chrome browser.
 
 1. Launch OpenBullet from the desktop.
 
 2. Navigate to **Configs -> Manager -> New**  Give it a name "*Human Credential Stuffing*" and Accept.  Double click to edit this item.
 
 |lab001|
- 
+
 3. Add a new **BROWSER ACTION** block. The default action of OPEN is all we need.
 
 |lab002|
@@ -19,7 +19,7 @@ In this test we will replicate a more "human like" automation that fully renders
 
 |lab003|
 
-5. Now we will add find the Username and Password fields and inject the text into them.  The field ID's or Names can be found in the HTML of the site but are provided 
+5. Now we will add find the Username and Password fields and inject the text into them.  The field ID's or Names can be found in the HTML of the site but are provided
 
 4. Add a new **ELEMENT ACTION** block. Under Find Element Element By ID = **email**  (case sensitive).  For Action choose **SENDKEYSHUMAN** and for the INPUT put in **<USERNAME>**
 
@@ -99,4 +99,3 @@ In this test we will replicate a more "human like" automation that fully renders
    :width: 800px
 .. |labend| image:: _static/labend.png
    :width: 800px
-

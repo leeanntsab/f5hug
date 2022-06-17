@@ -29,25 +29,25 @@ The CSD Dashboard displays the following tabs that you use for displaying data, 
 *Suspicious Domains:* When a web page with CSD protection is loaded on the end-user’s browser, scripts running on that web page interact with other domains. The Suspicious Domains list displays a list of the domains that those scripts interact with and which CSD detected to be potentially malicious.
 
 *Mitigate List:* Displays a list of domains that the user has assigned for mitigation. When a domain is assigned for mitigation, CSD blocks that domain and it cannot be accessed by any script running on the end-user's browser when accessing a CSD protected web page.
-    
+
 *Allow List:* Displays a list of domains that the user has decided do not need mitigation and can be allowed free access.
-    
+
 *All Domains:* When a web page with CSD protection is loaded, scripts running on that web page interact with other domains. The All Domains list displays a list of the domains that those scripts interact with.
 
 |
 
 1. Viewing suspicious domains
- 
+
  Click on suspicious domains to display the list of the potentially malicious domains. "Select Page" on the right allows to filter.
 
  .. image:: images/agility-suspicious-domains.png
 
- .. note:: If you do not see any domains, you may need to wait a few minutes.  Also, refreshing your JuiceShop site page can also help.  The requests are polled and sometimes not all of the requests are reviewed - it is roughly 1 in 5 or 10 requests.  
+ .. note:: If you do not see any domains, you may need to wait a few minutes.  Also, refreshing your JuiceShop site page can also help.  The requests are polled and sometimes not all of the requests are reviewed - it is roughly 1 in 5 or 10 requests.
 |
 
 2. Adding a domain to the Mitigate List or Allow List
-   
- Go to the row of the relevant domain and select the appropriate action on the right by clicking on the *three dots*. Our example shows how to add the domain jqwereid.online to the Mitigate List. It goes first in the state Added to Mitigated List (green) and change after some time to status Mitigated (blue). 
+
+ Go to the row of the relevant domain and select the appropriate action on the right by clicking on the *three dots*. Our example shows how to add the domain jqwereid.online to the Mitigate List. It goes first in the state Added to Mitigated List (green) and change after some time to status Mitigated (blue).
  Alternatively, you can add domains manually to the Mitigate List or Allow List by going to the Mitigate List or Allow List at the top and, click on *Add domain* and enter the domain name.
 
  .. image:: images/csd-mitigate.png
@@ -67,16 +67,16 @@ The CSD Dashboard displays the following tabs that you use for displaying data, 
 |
 
 3. Show that requests from scripts to the mitigated domains are blocked
- 
+
  Open the JuiceShop page (if not already open) and start the browser's DevTools.
 
  Have the network tab and console tab open as shown below
- 
+
  .. image:: images/agility-demonstrating-csd_7.png
 
-  Click the Clear button so that there are no files listed in the upper window.  
+  Click the Clear button so that there are no files listed in the upper window.
   If you need to open the Console, click on the 'Console' along the bottom of the Browser window.
- 
+
  Copy & paste the following code into the console::
 
    var s = document.createElement('script')
@@ -133,7 +133,7 @@ You can configure other alert systems as well
 
  .. image:: images/csd-alert-receiver-details.png
 
- Example for an alert email "Verify Email" 
+ Example for an alert email "Verify Email"
 
  .. image:: images/alert-email.png
 
@@ -212,7 +212,7 @@ Set up local Overrides in Chrome DevTools
 |
 
 12. Make your code changes on the right side.
- 
+
  .. image:: images/csd-add-injection-code.png
 
  **And make sure you save your changes afterwards e.g. with Ctrl+S or Command+S!**

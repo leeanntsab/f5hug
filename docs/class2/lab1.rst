@@ -1,18 +1,18 @@
 Lab 1: Deploying and Managing F5 Distributed Cloud Web Application Firewall Configuration
 =========================================================================================
 
-Lab 1 will focus on the deployment and security of an existing hosted application using F5 
-Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration 
-with no on-premises (public or private cloud) elements.  All configurations will be made via 
+Lab 1 will focus on the deployment and security of an existing hosted application using F5
+Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration
+with no on-premises (public or private cloud) elements.  All configurations will be made via
 the F5 Distributed Cloud Console and within the F5 Distributed Cloud Global Network services architecture.
 
-For the tasks that follow, you should have already noted your individual **namespace**. If you 
+For the tasks that follow, you should have already noted your individual **namespace**. If you
 failed to note it, return to the **Introduction** section of this lab, follow the instructions
-provided and note your **namespace** accordingly. The **Delegated Domain** and the F5 Distributed Cloud 
+provided and note your **namespace** accordingly. The **Delegated Domain** and the F5 Distributed Cloud
 **Tenant** are listed below for your convenience as they will be the same for all lab attendees.
 
-* **Delegated Domain:** *.lab-sec.f5demos.com* 
-* **F5 Distributed Cloud Tenant:** https://f5-xc-lab-sec.console.ves.volterra.io 
+* **Delegated Domain:** *.lab-sec.f5demos.com*
+* **F5 Distributed Cloud Tenant:** https://f5-xc-lab-sec.console.ves.volterra.io
 
 Following the tasks in the prior **Introduction** Section, you should now be able to access the
 F5 Distributed Cloud Console, having set your Work Domain Roles and Skill levels. If you have not
@@ -234,10 +234,10 @@ These steps will demonstrate various aspects of the configuration.
 | |lab023|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-Task 3: Testing the WAF Policy & Reviewing Event Data  
+Task 3: Testing the WAF Policy & Reviewing Event Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You will now perform basic testing of the Web Application Firewall (WAF) Policy. You will also 
+You will now perform basic testing of the Web Application Firewall (WAF) Policy. You will also
 review the generated event data to make additional configuration changes.
 
 +----------------------------------------------------------------------------------------------+
@@ -430,10 +430,10 @@ review the generated event data to make additional configuration changes.
 | |lab045|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-Task 4: Understanding Exclusions and Customizing WAF Policy  
+Task 4: Understanding Exclusions and Customizing WAF Policy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this task you will come to understand how exclusions are applied. You will also further  
+In this task you will come to understand how exclusions are applied. You will also further
 customize the WAF policy just built.
 
 +----------------------------------------------------------------------------------------------+

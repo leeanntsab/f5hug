@@ -5,7 +5,7 @@ Lab 1: Configure CSD and add the JavaScript tag to the web page
 ---------------------------------------------------------------
 
 1. Login
- 
+
  Navigate to https://www.f5.com/cloud, select login at the top right and finally select your account type to login.
 
  .. note:: You can sign up for a free account for the F5 Distributed Cloud in case you don't have an account yet by following the `sign up description <https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst>`_ or just go directly to the sign up page https://console.ves.volterra.io/signup/usage_plan.
@@ -44,7 +44,7 @@ Configure the domain as **f5.com** then **Save & Exit**
  .. image:: images/csd-script.png
 
  .. note:: The CSD JavaScript should always be the first JavaScript to load on the web page to ensure that the CSD JavaScript can detect any malicious scripts running on the web page.
-     
+
 |
 
 4. Update the Data Group with **your** JS identifier:
@@ -74,12 +74,12 @@ Click the "Add" button and then click "Update" at the bottom of the form to save
  .. image:: images/csd-domain-protect.png
 
  Finally proceed with step 5 from the screenshot above to test if the JavaScript tag was added successfully to your web page.
- 
+
  Click on "Test JS Injection" for the **f5.com** domain.
- 
+
  In our example you can copy and paste the JuiceShop link out of your UDF class. On the UDF main page, under BIG-IP open the JuiceShop link. Copy the link from the top of your browser and paste it in to URL field.
 
- .. image:: images/csd-js-test1.png 
+ .. image:: images/csd-js-test1.png
 
 .. note:: The UDF can mess with this test.  In all likelihood you will get a failure but with a "true" site you are working with, it should report back with Success.
 

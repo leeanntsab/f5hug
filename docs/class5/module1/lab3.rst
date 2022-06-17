@@ -23,7 +23,7 @@ In this lab, we will learn the following:
    .. image:: ../images/distributedappclickvirtualk8kubeconfig.png
       :width: 400pt
 
-#. Click the config kubeconfig is downloaded, and follow the Kubernetes documentation to configure your local kubctl tool. 
+#. Click the config kubeconfig is downloaded, and follow the Kubernetes documentation to configure your local kubctl tool.
 
     `Organizing Cluster Access Using kubeconfig Files <https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/>`_
 

@@ -49,7 +49,7 @@ From the "App Application" slideout select "BIGIP iApp" and click **Next**.
      Notice that there are other methods for injecting the ATI JS. These are out of scope for this lab.
 
 From step 2 click the **Download Template** button. This will download F5_APG.zip; take note of where you download this file and open it.  This should extract **f5.apg.analytics.tmpl**.
- 
+
 From step 4 copy the JS tag.
 
  .. image:: _static/ati-addapp-iapp.png
@@ -75,9 +75,9 @@ In the Import screen, click **Choose File**. From the file window, find and sele
 
  .. figure:: _static/ati-iapp-templates.png
 
-     Take note that there was already a template named "f5.apg_analytics" 
+     Take note that there was already a template named "f5.apg_analytics"
      that was pre-installed and ships with TMOS 16.1.
-     The template you just uploaded is named "f5.apg.analytics" and has some 
+     The template you just uploaded is named "f5.apg.analytics" and has some
      slight but important differences from the pre-installed template.
 
 |
@@ -90,7 +90,7 @@ In the Import screen, click **Choose File**. From the file window, find and sele
  .. image:: _static/ati-iapp-create.png
 
  In the New Application Service window, select the "f5.apg.analytics" template from the Template dropdown.
- 
+
  .. note::
      Ensure that you select the "f5.apg.analytics" template that you installed in the previous step.  This should be the first template listed.
 
@@ -117,10 +117,10 @@ In the Import screen, click **Choose File**. From the file window, find and sele
  On the UDF main page, under the BIG-IP, open the JuiceShop link
 
  .. image:: _static/agility-udf-ui_2.png
- 
+
  Right-click anywhere on the JuiceShop webpage and select 'View Page Source'.
  On line 3 of the HTML code for this page, immediately following the opening ``<head>`` tag, you should see the ``<script>`` tag injected by the iApp.
- 
+
  .. image:: _static/ati-js-pagesource.png
 
 |

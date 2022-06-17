@@ -16,13 +16,13 @@ You can sign up for a free account for the F5 Distributed Cloud by following the
 What we'll learn
 ----------------
 
-During this hands-on lab you will learn about the following: 
+During this hands-on lab you will learn about the following:
 
  - High level introductions for the use case of Application Traffic Insight (ATI)
  - Login to the F5 XC Console
  - Download, import, and run the latest ATI iApp on your BIGIP
  - Validate the ATI JS injection on the protected website
- - Use various automation tools to generate bot traffic 
+ - Use various automation tools to generate bot traffic
  - Review the F5XC ATI dashboard to see a summary of Client/Device Overview and Bot Insights
 
 Lab Environment
@@ -40,10 +40,10 @@ Feedback for this lab can be sent directly to j.martin@f5.com.
 
 F5 Distributed Cloud Application Threat Insight:
 --------------------------------------------------------------------------
-Account Takeover, Online Fraud, and Webscraping are a problem for many organizations.  Identifying unique devices accessing your web applications and understanding the relationship between those devices and users, accounts, and where those devices are accessing your site from can help identify suspicious activity.  Additionally, gaining visibility into what traffic is automated can quickly and drastically reduce unwanted and/or malicious activity.  
+Account Takeover, Online Fraud, and Webscraping are a problem for many organizations.  Identifying unique devices accessing your web applications and understanding the relationship between those devices and users, accounts, and where those devices are accessing your site from can help identify suspicious activity.  Additionally, gaining visibility into what traffic is automated can quickly and drastically reduce unwanted and/or malicious activity.
 
 F5 Distributed Cloud (F5XC) Application Threat Insight provides a high-level overview of application traffic in two primary sections:
-  
+
 **Device Dashboard** - provides a high-level overview of devices accessing your web applications, including:
  - Count unique devices over time
  - Count of devices returning overtime
@@ -64,4 +64,3 @@ Next: |signup|
 .. |signup| raw:: html
 
             <a href="./lab1.rst" target="_blank">Lab 1: Configuring and Deploying F5XC Application Threat Insight</a>
-

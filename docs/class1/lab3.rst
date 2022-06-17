@@ -1,7 +1,7 @@
 Lab 3: Protecting a Private Endpoint
 ====================================
 
-In the previous lab you learned how an AppMesh node can be deployed 
+In the previous lab you learned how an AppMesh node can be deployed
 
 In this next lab we will look at two additional topologies of how you can use an "AppMesh" node
 to secure traffic that is going to an endpoint that is not directly exposed to the Internet.
@@ -10,7 +10,7 @@ Task 1. Create Origin Pools
 ---------------------------
 
 Previously we created an origin pool that was accessible via the Public Internet.
-The next lab exercise will create an origin pool that will provide internal resources discovered with local DNS by the AppMesh node that is deployed in our lab AWS environment. 
+The next lab exercise will create an origin pool that will provide internal resources discovered with local DNS by the AppMesh node that is deployed in our lab AWS environment.
 
 Exercise 1: Create Private Origin Pool
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,7 +31,7 @@ We will first create an Origin Pool that refers to the "Private Endpoint" site i
 
 #. Click on "Add Item" under the section "Origin Servers"
 
-   Enter the following variables: 
+   Enter the following variables:
 
    ================================= =====
    Variable                          Value
@@ -40,7 +40,7 @@ We will first create an Origin Pool that refers to the "Private Endpoint" site i
    DNS Name                          private.lab.f5demos.internal
    Site                              student-awsnet
    ================================= =====
-    
+
    |op-pool-basic|
 
    Click on "Add Item" to return to the previous screen.
@@ -93,21 +93,21 @@ Exercise 1: HTTP Load Balancer Configuration
 #. Navigate the menu to go to "Manage"->"HTTP Load Balancers" and look for the Load Balancer named *global* that you previously created.
 
 #. Click on the three dots "..." to the right of the name of your *global* Load Balancer and select the "Manage Configuration" option.
-   
+
    .. image:: _static/screenshot-global-vip-actions-manage.png
 #. Click on "Edit Configuration" in the upper right of the screen (after your *global* Load Balancer is loaded).
-   
+
    .. image:: _static/screenshot-global-vip-edit-config.png
 #. Under "Default Origin Servers" find your previous "public" Origin pool and click on the three dots "..." to the right under "Actions" and select "Edit"
-   
+
    .. image:: _static/screenshot-global-vip-edit-config-pools.png
 #. Change the selection of "Origin Pool" to "private" from "public" and click "Apply"
-   
+
    .. image:: _static/screenshot-global-vip-edit-config-pools-select.png
 #. Click "*Save and Exit* to update the HTTP Load Balancer.
 
-You should now be able to go to the DNS name that you entered 
-previously in a web browser.  The FQDN we used in our example is http://stable-sheep.lab-sec.f5demos.com/.  
+You should now be able to go to the DNS name that you entered
+previously in a web browser.  The FQDN we used in our example is http://stable-sheep.lab-sec.f5demos.com/.
 
 Exercise 2: Verify Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,7 +119,7 @@ The private demo app should look like the following:
 
 In this topology we are sending traffic to an AnyCast IP that is hosted in F5 Distributed Cloud's Regional Edge.
 
-We then connect to the AWS resource via the AppMesh node that is deployed in the same VPC as the "Private Endpoint".  
+We then connect to the AWS resource via the AppMesh node that is deployed in the same VPC as the "Private Endpoint".
 The AppMesh is only being used for network connectivity to the Private Endpoint; enforcement of the WAF policy is still
 being applied in the Regional Edge.
 
@@ -154,18 +154,18 @@ Exercise 1: HTTP Load Balancer Configuration
    Name                              local
    Domains                           [NAMESPACE].aws.lab.f5demos.com
    Select type of Load Balancer      HTTP
-   Automatically Manage DNS Records  No/Unchecked 
+   Automatically Manage DNS Records  No/Unchecked
    ================================= =====
 
 Exercise 2: Configure Default Origin Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We'll next configure the "Default Origin Servers".   
-    
+We'll next configure the "Default Origin Servers".
+
 #. Click on the *Add Items* link under the *Default Origin Servers* section.
 
 #. The "Select Origin Pool Method" will be set to "Origin Pool". Under the "Origin Pool" dropdown menu select the "private" pool you created earlier.
- 
+
 #. Click the *Add Item* button to exit the "Origin Pools" dialogue.
 
 Exercise 3: Configure Local VIP
@@ -178,26 +178,26 @@ that is attached to that interface.  If we wished to only have the service avail
 we could opt to use the "Inside" interface that does not have an AWS EIP attached.
 
 #. Under "Advanced Configuration" set "Where to Advertise the VIP" to "Advertise Custom"
-   
+
    .. image:: _static/screenshot-local-vip-advertise-custom.png
-   
+
 #. Click on "Configure" under "Advertise Custom"
 #. Next to "Custom Advertise VIP Configuration" click on "Show Advanced Fields"
 #. Click on "Add Item"
-#. For "Site Network" click on "Outside Network" 
+#. For "Site Network" click on "Outside Network"
 #. For "Site Reference" select `student-awsnet`
 
    .. image:: _static/lb-local-vip-advertise.png
       :width: 75%
-	  
-#. Click on "Add Item" 
+
+#. Click on "Add Item"
 #. Click on "Apply" to return to previous screen
 
 
 Exercise 4: Configure WAF Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Under the *Security Configuration* section 
+#. Under the *Security Configuration* section
 
 #. Enter the following variables:
 
@@ -210,8 +210,8 @@ Exercise 4: Configure WAF Policy
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer.
 
-Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered 
-previously in a web browser.  The FQDN we used in our example is http://stable-sheep.aws.lab.f5demos.com.  
+Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered
+previously in a web browser.  The FQDN we used in our example is http://stable-sheep.aws.lab.f5demos.com.
 This is a wildcard DNS entry that points to the Public IP (AWS Elastic IP) that is attached to the AppMesh node.
 
 Exercise 5: Verify Configuration
@@ -228,7 +228,7 @@ Exercise 6: Verify DNS
 
 You can verify that you are connecting directly to AWS by comparing the DNS of the two hosts.
 
-.. code-block:: 
+.. code-block::
 
     dig +short student001.aws.lab.f5demos.com
     192.0.2.10
@@ -237,7 +237,7 @@ You can verify that you are connecting directly to AWS by comparing the DNS of t
 
 In this topology we are sending traffic to the AWS EIP that attached to the AppMesh node in the AWS VPC.
 
-We then connect to the AWS resource via it's Private IP address.  
+We then connect to the AWS resource via it's Private IP address.
 
 Try adding the following to the URL "?cat%20/etc/passwd".
 
@@ -247,11 +247,10 @@ that is deployed in the AWS Lab Environment and not in the F5 Distributed Cloud 
 
 In the next lab we will look at how to customize our WAF policy.
 
-Video Walkthrough 
+Video Walkthrough
 ^^^^^^^^^^^^^^^^^
 
 Optional Video you can watch if you get stuck
 
 .. raw:: html
    <iframe width="560" height="315" src="https://www.youtube.com/embed/s-BHH0Qayfc?start=400" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-

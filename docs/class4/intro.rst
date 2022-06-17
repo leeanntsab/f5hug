@@ -15,7 +15,7 @@ In this example we are starting with an "on-prem" Data Center.
 
 .. image:: ./images/intro1.png
 
-The "frontend" application has a requirement that it must be able to 
+The "frontend" application has a requirement that it must be able to
 communicate with the "backend".  The "backend" could be a database, legacy system, etc.
 
 The goal is to extend the environment into AWS and still allow the "frontend" to
@@ -25,7 +25,7 @@ in both the on-prem and AWS environment.
 .. image:: ./images/intro2.png
 
 Once you have deployed the AWS environment and deployed two Distributed Cloud Mesh sites you will utilize
-a F5 Distributed Cloud TCP Load Balancer to privately connect from AWS to on-prem and a HTTP Load Balancer 
+a F5 Distributed Cloud TCP Load Balancer to privately connect from AWS to on-prem and a HTTP Load Balancer
 to connect publicly from a Regional Edge (AnyCast IP) to the frontend in AWS.
 
 .. image:: ./images/intro3.png

@@ -3,10 +3,10 @@ Lab 2: Reviewing Signature-based Bot Strategies and enabling F5 Distributed Clou
 
 The following lab tasks will guide you through a review of signature-based Bot protections
 already available via the Web Application Firewall configuration. The security configuration
-will then be extended through F5 Distributed Bot Defense, an AI-driven, behavioral security 
-feature set to protect the previously configured application from advanced Bot threats. 
+will then be extended through F5 Distributed Bot Defense, an AI-driven, behavioral security
+feature set to protect the previously configured application from advanced Bot threats.
 
-Task 1: Reviewing Signature-based Bot protection   
+Task 1: Reviewing Signature-based Bot protection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In this task you will review the Bot signature configuration and view logged security events.
 This lab will begin back in the F5 Distributed Cloud Console.

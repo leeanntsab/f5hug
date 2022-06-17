@@ -7,7 +7,7 @@ During this lab you can use your own F5 Distributed Cloud account and the associ
 Lab & Tasks:
 ~~~~~~~~~~~~
 
-The next page (Introduction) will cover the lab environment, access, and lab variables. 
+The next page (Introduction) will cover the lab environment, access, and lab variables.
 
 
 .. toctree::
@@ -15,7 +15,7 @@ The next page (Introduction) will cover the lab environment, access, and lab var
    :numbered:
    :caption: Labs:
    :glob:
-   
+
    intro*
    lab*
    close*

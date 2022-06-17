@@ -10,27 +10,27 @@ Task 1. Create WAF Policy
 
 F5 Distributed Cloud WAF shares the same WAF engine that is used by F5 BIG-IP WAF and F5 NGINX App Protect.
 
-The F5 Distributed Cloud WAF engine provides preset categories of rules to protect your web 
-applications, provides the ability to run in a monitor or blocking mode, prevent 
+The F5 Distributed Cloud WAF engine provides preset categories of rules to protect your web
+applications, provides the ability to run in a monitor or blocking mode, prevent
 false positives by excluding individual rules, IP addresses, or web application paths
 
-In the next exercise you will configure a basic WAF policy 
+In the next exercise you will configure a basic WAF policy
 
 Exercise 1: Create WAF Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We will create a blocking WAF policy.
 
-#. Start in F5 Distributed Cloud Console and switch to the "Web App & API Protection" context. 
+#. Start in F5 Distributed Cloud Console and switch to the "Web App & API Protection" context.
 
-   It can be access either from the main Home page... 
-   
+   It can be access either from the main Home page...
+
    |app-context|
-  
+
    ...or via the "Select Service" menu on the top left corner of any other page:
 
    |select-service|
-   
+
 #. Ensure you are in the proper namespace (an adjective-animal combination) and not the default namespace. It is ok if you do not see your namespace as you will be defaulted to it as seen in your URI path as in the Introduction section.
 
    |namespace-selection|
@@ -46,34 +46,34 @@ We will create a blocking WAF policy.
    Enforcement Mode                  Blocking
    ================================= ============================================
 
-   In this mode we have change the policy to block attacks that are included in 
+   In this mode we have change the policy to block attacks that are included in
    the default policy.  Later we will look at how we can customize these settings.
 
    .. image:: _static/blocking-app-firewall-policy.png
 
 #. Click the *Save and Exit* button to create the policy
 
-Video Walkthrough 
+Video Walkthrough
 ^^^^^^^^^^^^^^^^^
 Optional Video you can watch if you get stuck
 
-Note that each of the videos will start at a specific timestamp.  
+Note that each of the videos will start at a specific timestamp.
 
 The entire video is 10 minutes total from start to finish.
 
 .. raw:: html
-   
+
    <iframe width="560" height="315" src="https://www.youtube.com/embed/s-BHH0Qayfc?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Task 2. Create Origin Pools
 ---------------------------
 
-Before we create an HTTP load balancer to expose our services on the internet, 
+Before we create an HTTP load balancer to expose our services on the internet,
 we'll define "Origin Pools" for our application's services.
 
-This initial Origin Pool will use the Public DNS record of our target webserver 
-to locate the IP address of the Origin Pool members.  This is an example of using 
-the Public Internet to route traffic to our services.  In later examples we will 
+This initial Origin Pool will use the Public DNS record of our target webserver
+to locate the IP address of the Origin Pool members.  This is an example of using
+the Public Internet to route traffic to our services.  In later examples we will
 look at routing traffic via AppMesh to our services.
 
 Exercise 1: Create Public Origin Pool
@@ -94,7 +94,7 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
 
 #. Click on "Add Item" under the section "Origin Servers"
 
-   Enter the following variables: 
+   Enter the following variables:
 
    ================================= =====
    Variable                          Value
@@ -102,7 +102,7 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
    Select Type of Origin Server      Public DNS Name of Origin Server [default]
    DNS Name                          public.lab.f5demos.com
    ================================= =====
-    
+
    |op-pool-basic|
 
    Click on "Add Item" to return to the previous screen.
@@ -164,21 +164,21 @@ Exercise 1: HTTP Load Balancer Configuration
    Name                              global
    Domains                           [YOUR-NAMESPACE].lab-sec.f5demos.com
    Select type of Load Balancer      HTTP
-   Automatically Manage DNS Records  Yes/Check 
+   Automatically Manage DNS Records  Yes/Check
    ================================= =====
 
    |lb-basic|
 
 Exercise 2: Configure Default Origin Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-We'll next configure the "Default Origin Servers". 
-    
+We'll next configure the "Default Origin Servers".
+
 #. Click on the *Add Items* link under the *Default Origin Servers* section.
 
 #. The "Select Origin Pool Method" will be set to "Origin Pool". Under the "Origin Pool" dropdown menu select the "public" pool you created earlier.
 
    .. image:: _static/lb-pool-public.png
- 
+
 #. Click the *Add Item* button to exit the "Origin Pools" dialogue.
 
 #. Notice that in the "Advanced Configuration" section *Advertise On Internet* has been selected by default.
@@ -186,7 +186,7 @@ We'll next configure the "Default Origin Servers".
 Exercise 3: Configure WAF Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Under the *Security Configuration* section 
+#. Under the *Security Configuration* section
 
 #. Choose the following options:
 
@@ -199,8 +199,8 @@ Exercise 3: Configure WAF Policy
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer.
 
-Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered 
-previously in a web browser.  The FQDN we used in our example is http://stable-sheep.lab-sec.f5demos.com.  
+Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered
+previously in a web browser.  The FQDN we used in our example is http://stable-sheep.lab-sec.f5demos.com.
 Your FQDN should follow the format of [unique name].[supplied domain name for your tenant].
 
 .. note:: If you are having challenges connecting to the "f5demos.com" name you can also try connecting to the "ves.io" name.
@@ -215,7 +215,7 @@ The public demo app should look like the following:
 
 In this topology we are sending traffic to an AnyCast IP that is hosted in F5 Distributed Cloud's Regional Edge.
 
-We then connect to the AWS resource via it's Public IP address.  
+We then connect to the AWS resource via it's Public IP address.
 
 Try adding the following to the URL "/?cat%20/etc/passwd".
 
@@ -223,7 +223,7 @@ You should see a block page.
 
 .. image:: _static/screenshot-global-vip-public-cat-etc-passwd.png
 
-Exercise 5: Performance and Security 
+Exercise 5: Performance and Security
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Start in F5 Distributed Cloud Console and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
@@ -260,7 +260,7 @@ Exercise 5: Performance and Security
 
 Next we will demonstrate how we can securely connect to your private AWS resources via a AppMesh node.
 
-Video Walkthrough 
+Video Walkthrough
 ^^^^^^^^^^^^^^^^^
 Optional Video you can watch if you get stuck
 

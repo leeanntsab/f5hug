@@ -4,8 +4,8 @@ Lab 1: Creating a Site (Simulator)
 F5 Simulators
 -------------
 
-F5 provides "simulations" of its services via "F5 Simulators".  We will first use the 
-Distributed Cloud Simulator to familiarize you with the environment.  Later in the lab 
+F5 provides "simulations" of its services via "F5 Simulators".  We will first use the
+Distributed Cloud Simulator to familiarize you with the environment.  Later in the lab
 we will make use of a shared lab environment that will let you interact with a "live" system.
 
 Exercise #1
@@ -14,12 +14,12 @@ Exercise #1
 Please visit: https://simulator.f5.com/s/cloud2cloud_via_httplb/nav/sim1/020/0
 
 
-Note that you will need to pay attention for fields that are highlighted.  Some of them like "Show Advanced Fields" 
+Note that you will need to pay attention for fields that are highlighted.  Some of them like "Show Advanced Fields"
 may appear on the bottom right of the screen.
 
 .. image:: ../images/f5-simulator-show-advanced-fields.png
 
-You can opt to fill in the form fields or you can click on the "Next" button to allow the simulator to fill-in 
+You can opt to fill in the form fields or you can click on the "Next" button to allow the simulator to fill-in
 the fields as required.  Note that all of these actions can also be performed via the Distributed Cloud API.
 
 .. image:: ../images/f5-simulator-next.png

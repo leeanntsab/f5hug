@@ -1,9 +1,9 @@
-Lab 2: Basic Attack Automation 
+Lab 2: Basic Attack Automation
 ==============================
 
 **Run this lab from the JUMPHOST**
 
-In this lab we will be utilizing the automation toolkit known as OpenBullet and taking on the 
+In this lab we will be utilizing the automation toolkit known as OpenBullet and taking on the
 role of a credential stuffing attacker.  This is a flexible application that allows you to easily
 create credential stuffing and scraping attacks. This will assist you in further understanding the tools
 available to "bad actors" to launch highly effective attacks on unprotected sites.
@@ -29,7 +29,7 @@ it  makes curl like requests.
 
 |lab004|
 
-6. Add a new **PARSE** block. Configure **Var/Cap Name** as "*CSRF*".  
+6. Add a new **PARSE** block. Configure **Var/Cap Name** as "*CSRF*".
 **!!! For this step an issue has been identified copy & pasting these values from the lab document via RDP. They seem to lose escape characters. Ensure you find and copy them from the LOG window as seen in the previous step!!! **
 then for the **Left String** we use **<input id="csrf_token" name="csrf_token" type="hidden" value="** and Right String we use **">** Check **ENC. OUTPUT**. This will capture the token between the left and right strings and store it in a variable named CSRF for future use.
 
@@ -69,7 +69,7 @@ then for the **Left String** we use **<input id="csrf_token" name="csrf_token" t
 |lab012|
 
 **End of Lab 2:**  This concludes Lab 2, feel free to review and test the configuration.
- 
+
 |labend|
 
 .. |lab001| image:: _static/Slide6.png

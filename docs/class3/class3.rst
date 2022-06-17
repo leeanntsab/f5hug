@@ -5,7 +5,7 @@ Welcome
 -------
 
 In this lab, attendees will review and explore more adavnced services within F5 Distributed Cloud Services.
-Lab tasks will focus on providing a deeper review of AI-driven BotDefense security, integrate of Client-side 
+Lab tasks will focus on providing a deeper review of AI-driven BotDefense security, integrate of Client-side
 Defense and enable additional visibility of Application Traffic Insight.
 
 Objective:
@@ -28,8 +28,7 @@ Lab & Tasks:
    :numbered:
    :caption: Labs:
    :glob:
-   
+
    intro*
    lab*
    close*
-   

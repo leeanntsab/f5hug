@@ -6,7 +6,7 @@ Lab 1 - Create Origin Pool
 #. Navigate the left-side menu to **Manage -> Load Balancers**, then click **Origin Pools**.
 
    |origin_pool|
-   
+
 #. Click the **Add Origin Pool** button.
 
    |origin_pool_add|
@@ -27,7 +27,7 @@ Lab 1 - Create Origin Pool
     - **Select Network on the site**: vK8s Networks on Site
 
    |origin_pools_menu|
- 
+
 #. Click on **Add Item** to return to the previous screen
 
 #. Click the **Save and Exit** button to close the **Origin Pool** dialogue.

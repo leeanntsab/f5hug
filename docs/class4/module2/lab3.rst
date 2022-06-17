@@ -14,7 +14,7 @@ host a TCP Load Balancer that will proxy traffic back to the original backend ap
 
 .. image:: ../images/tcplb-lab.png
 
-Exercise 1: Verify DNS 
+Exercise 1: Verify DNS
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 In the previous lab exercise we made a "In Container Diagnostic Services" service available.
@@ -29,8 +29,8 @@ to simulate HTTP/HTTPS connections from inside the AWS environment.
 
    .. image:: ../images/dns-lookup-jumphost.png
 
-You'll see that the private IP of the jumphost is returned.  The Distributed Cloud Mesh node used the 
-internal DNS of your AWS site to resolve the IP of the private jumphost and made use of the 
+You'll see that the private IP of the jumphost is returned.  The Distributed Cloud Mesh node used the
+internal DNS of your AWS site to resolve the IP of the private jumphost and made use of the
 secure tunnel to the Distributed Cloud Regional Edge to expose the service.
 
 Next we will verify that we do not have a DNS record for adjective-animal.example.internal
@@ -44,7 +44,7 @@ Next we will verify that we do not have a DNS record for adjective-animal.exampl
 You should receive an error.  You should look for "SERVFAIL" that indicates the name does not exist.
 
 .. code-block::
-        
+
     ; <<>> DiG 9.16.1-Ubuntu <<>> @10.0.5.220 poetic-quail.example.internal A
     ; (1 server found)
     ;; global options: +cmd
@@ -72,7 +72,7 @@ Exercise 2: Origin Pool
 #. Click the *Add Origin Pool* button.
 
    |origin_pools_add|
-    
+
 #. Enter the following variables:
 
 =============================== ===============
@@ -109,7 +109,7 @@ Health Check                    TCP HealthCheck
 =============================== ===============
 
 #. Click on the "Configure" button to open the dialog to adjust timeout settings then click "Apply"
-#. Click the *Continue* button to close the *Health Check Parameters* dialogue. 
+#. Click the *Continue* button to close the *Health Check Parameters* dialogue.
 
 #. Click the *Save and Exit* button to close the *Origin Pool* dialogue.
 
@@ -141,12 +141,12 @@ Exercise 3: Create Backend TCP Load Balancer
    #. Select the *backend* pool.
    #. Click the *Add Item* button to close the *Origin Pools* dialogue.
 
-#. Configure Advertisement 
+#. Configure Advertisement
 
    #. Under *Advertise Custom* click the *Configure* link.
    #. Click on "Add Item"
    #. You will need to add a site:
-            
+
       =========================== =====
       Variable                    Value
       =========================== =====
@@ -184,7 +184,7 @@ You should no longer get an error.
 Exercise 5: Connect to the backend
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this exercise we will emulate how a distributed application could access a resource that 
+In this exercise we will emulate how a distributed application could access a resource that
 resides in another remote network via the Distributed Cloud Global Network.
 
 Using the "In Container Diagnostic Services"
@@ -223,4 +223,4 @@ Thank you for completing the lab!
 .. |origin_pools_config_mongodb| image:: ../images/origin_pools_config_mongodb.png
 .. |dns_check| image:: ../images/m-dns-check.png
 .. |check_host| image:: ../images/m-check-host.png
-.. |check_ip| image:: ../images/m-check-ip.png        
+.. |check_ip| image:: ../images/m-check-ip.png

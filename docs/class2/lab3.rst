@@ -1,10 +1,10 @@
-Lab 3: Exploring Service Policies 
+Lab 3: Exploring Service Policies
 =================================
 
-The following lab tasks will guide you the configuration of various Service Policies 
-which can be used to implement a variety of security controls. 
+The following lab tasks will guide you the configuration of various Service Policies
+which can be used to implement a variety of security controls.
 
-Task 1: Creating Local Namespace Service Policies  
+Task 1: Creating Local Namespace Service Policies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task you will add geo-filter and allowed-ip based service policies.

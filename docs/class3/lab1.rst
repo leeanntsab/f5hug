@@ -1,9 +1,9 @@
 Lab 1: Deploying Load Balancer, Configuring F5 Distributed Cloud BotDefense
 ===========================================================================
 
-Lab 1 will focus on the deployment and security of an existing hosted application using F5 
-Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration 
-with no on-premises (public or private cloud) elements.  All configurations will be made via 
+Lab 1 will focus on the deployment and security of an existing hosted application using F5
+Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration
+with no on-premises (public or private cloud) elements.  All configurations will be made via
 the F5 Distributed Cloud Console and within the F5 Distributed Cloud Global Network services architecture.
 
 The overall goal of this set of labs is to showcase how easy it is for F5 Distributed Cloud BotDefense
@@ -11,13 +11,13 @@ to be enabled. This lab will also act as a quick refresher of how web-based logi
 they can be exploited by credential stuffing attacks. Once this initial lab is complete, we will expand
 on the concepts of attacks and security by utilizing the automation toolkit known as OpenBullet.
 
-For the tasks that follow, you should have already noted your individual **namespace**. If you 
+For the tasks that follow, you should have already noted your individual **namespace**. If you
 failed to note it, return to the **Introduction** section of this lab, follow the instructions
-provided and note your **namespace** accordingly. The **Delegated Domain** and the F5 Distributed Cloud 
+provided and note your **namespace** accordingly. The **Delegated Domain** and the F5 Distributed Cloud
 **Tenant** are listed below for your convenience as they will be the same for all lab attendees.
 
-* **Delegated Domain:** *.lab-sec.f5demos.com* 
-* **F5 Distributed Cloud Tenant:** https://f5-xc-lab-sec.console.ves.volterra.io 
+* **Delegated Domain:** *.lab-sec.f5demos.com*
+* **F5 Distributed Cloud Tenant:** https://f5-xc-lab-sec.console.ves.volterra.io
 
 Following the tasks in the prior **Introduction** Section, you should now be able to access the
 F5 Distributed Cloud Console, having set your Work Domain Roles and Skill levels. If you have not
@@ -35,10 +35,10 @@ steps will define an application, register its DNS and assign a target as an ori
 
 .. note::
    *You have defaulted to your specific namespace as that is the only namespace to which you*
-   *have administrative access.*                                                             
+   *have administrative access.*
 
 |lab001|
- 
+
 |lab002|
 
 3. Using the left-hand navigation and in the sections as shown, enter the following data. Values where **<namespace>** is required, use the name of your given namespace.
@@ -72,9 +72,9 @@ steps will define an application, register its DNS and assign a target as an ori
 11. After returning to the next window and confirming the content, click **Add Item**.
 
 |lab008|
- 
+
 |lab009|
- 
+
 |lab010|
 
 12. Continuing in the **Security Configuration** section, click on the **Select Web Application Firewall (WAF Config)** and select **App Firewall**.
@@ -129,7 +129,7 @@ steps will define an application, register its DNS and assign a target as an ori
     * **Prefix:** */user/vipsignin*
     * **Bot Traffic Mitigation:Select Bot Mitigation Action:** *Flag*
 	* **Bot Traffic Mitigation:Include Mitigation Headers:** *Append Headers**
-    * Leave **Inference Header Name** and **Automation Type Header Name** as their respective defaults.	
+    * Leave **Inference Header Name** and **Automation Type Header Name** as their respective defaults.
 
 23. Scroll to the bottom and click **Add Item**
 
@@ -141,9 +141,9 @@ steps will define an application, register its DNS and assign a target as an ori
 
 25. Then click **Apply** on the **Protected App Endpoints** screen
 
-26. In the resulting **HTTP Load Balancer** window, scroll to the **Advanced Configuration** section and note the **Where to Advertise the VIP** setting. 
+26. In the resulting **HTTP Load Balancer** window, scroll to the **Advanced Configuration** section and note the **Where to Advertise the VIP** setting.
 
-.. note::                                                                                    
+.. note::
    *The above selection controls how/where the application is advertised. The "Advertise On Internet" setting means that this application will be advertised globally using the F5 Distributed Cloud Global Network utilizing Anycast.*
 
 27. Click **Save and Exit** at the bottom of the **HTTP Load Balancer** configuration screen.
@@ -153,13 +153,13 @@ steps will define an application, register its DNS and assign a target as an ori
 |lab024|
 
 |lab025|
- 
+
 |lab026|
 
 |lab027|
 
 |lab028|
- 
+
 Task 2: Curl - Direct (10min)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -211,7 +211,7 @@ Task 3: Compare Via Bot Defense (5min)
 |lab033|
 
 **End of Lab 1:**  This concludes Lab 1, feel free to review and test the configuration.
- 
+
 |labend|
 
 .. |lab001| image:: _static/lab1-001.png
