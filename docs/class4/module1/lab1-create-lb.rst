@@ -1,22 +1,15 @@
 Lab 1: Create HTTP Load Balancer
 ================================
 
-In this lab exercise we will create an HTTP Load Balancer that will allow you
-to access frontend application that will allow you to explore the AWS environment.
+In this lab we will create an HTTP Load Balancer on F5 Distributed Cloud that will allow you to access an application running in AWS.
 
-We will first access the AWS environment by connecting directly to an EC2 instance 
-that is directly exposed on the Public Internet.
-
-Afterwards we will connect via a secure tunnel through a Distributed Cloud Mesh node
-to an EC2 instance that does not have a Public IP.
+We will connect via a secure tunnel through a Distributed Cloud Mesh node to an EC2 instance that does not have a Public IP.
 
 You will first create an origin pool for your frontend application in AWS.
 
-Afterwards you will create a HTTP Load Balancer that will reference your origin pool 
-and expose the service on Distributed Cloud's Regional Edge.
+Afterwards you will create a HTTP Load Balancer that will reference your origin pool and expose the service on Distributed Cloud's Regional Edge.
 
-In the following lab we will add an additional "backend" resource that will allow us 
-to connect to our "on-prem" site.
+In the following lab we will add an additional "backend" resource that will allow us to connect to our "on-prem" site.
 
 .. image:: ../images/httplb-lab.png
 
@@ -112,9 +105,7 @@ Exercise 2: HTTP Load Balancer Configuration
 
    |lb-basic|
 
-Exercise 3: Configure Default Origin Server
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We'll next configure the "Default Origin Servers". 
+Next, we will configure the "Default Origin Servers". 
     
 #. Click on the *Add Item* in the *Origin Pools* section.
 
@@ -141,12 +132,12 @@ In this topology we are sending traffic to an AnyCast IP that is hosted in the F
 We then connect to the AWS resource via it's Public IP address.  Next we will demonstrate how we 
 can securely connect to your private AWS resources via a Distributed Cloud Mesh node.
 
-Exercise 4: Private Origin Pool
+Exercise 3: Private Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this exercise we will create a new origin pool that connects to our AWS site via the F5 Distributed Clouds Global Network.  
+In this exercise we will create a new origin pool that connects to our AWS site via the F5 Distributed Cloud.  
 
-#. Navigate the menu to go to "Manage"->"Load Balancers"->"Origin Pools". Click on *Add Origin Pool*.
+#. Navigate the menu to go to Manage --> Load Balancers --> Origin Pools. Click on *Add Origin Pool*.
  
    |op-add-pool|
 
@@ -180,7 +171,7 @@ In this exercise we will create a new origin pool that connects to our AWS site 
 
 #. Click the *Save and Exit* button to create the Origin Pool.
 
-Exercise 5: Edit HTTP Load Balancer Configuration
+Exercise 4: Edit HTTP Load Balancer Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Navigate the menu to go to "Manage"->"Load Balancers"->"HTTP Load Balancers" and click on "..." next to the HTTP LB 
@@ -202,7 +193,9 @@ Exercise 5: Edit HTTP Load Balancer Configuration
 
    .. image:: ../images/m-container-tool-aprilui.png
 
-Exercise 6: Review General Monitoring Stats
+   *Note: If you get an HTTP 503, wait another minute and refresh again.*
+
+Exercise 5: Review General Monitoring Stats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We can also view analytics of our HTTP Load Balancer.
@@ -216,14 +209,14 @@ We can also view analytics of our HTTP Load Balancer.
    .. image:: ../images/healthscore-100.png
        :width: 25%
 
-** Extra Credit: Exercise 7: Create HTTPS Load Balancer **
+** Extra Credit: Exercise 6: Create HTTPS Load Balancer **
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Note: This exercise is completely optional. To make it more challenging, the exact steps needed to accomplish this are left up to the student.*
 
 #. Configure a new **HTTPS** load balancer with the name, "frontend-secure", that points to the *frontend-private* origin pool. (For help, see https://docs.cloud.f5.com/docs/how-to/app-networking/http-load-balancer).
 #. Ensure the new site works by navigating to https://[adjective-animal].lab-sec.f5demos.com (where [adjective-animal] is you namespace.
-#. Use ssllabs.com to ensure the site gets an "A" score.
+#. Use ssllabs.com to ensure the site gets an "A" score. *Note: SSLLabs may take several minutes to complete its health assessment.*
 #. For the remainder of this workshop, use this new HTTPS load balancer instead of the HTTP version previously created whenever a load balancer is mentioned.
 
    .. image:: ../images/ssllabs-A-grade.png
