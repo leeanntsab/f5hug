@@ -7,7 +7,34 @@ in AWS (webserver with an EIP).
 
 **Note:** If you did the extra credit exercise in the previous lab and created an **HTTPS** load balancer, use that one for all exercises that reference the HTTP load balancer.
 
-**Prerequiste:** Set the origin pool of the frontend HTTP load balancer back to frontend-public. If you need help, refer to Exercise 4 in Lab 1 on how to edit the configuration.
+**Prerequiste:** Set the origin pool of the frontend HTTP load balancer back to frontend-public.
+
+#. Navigate the menu to go to "Manage" -> "HTTP Load Balancers" and look for the Load Balancer that you previously created.
+
+#. Click on the three dots "..." to the right of the name of your Load Balancer and select the "Manage Configuration" option.
+
+#. Click on the "Edit Configuration" in the far upper-right corner of the page.
+
+   .. image:: _static/edit-configuration-button.png
+      :width: 50%
+
+#. Select Origins in the left navigation pane and click on the frontend-private origin pool.
+
+   .. image:: _static/select-origin-pool.png
+      :width: 100%
+      
+#. In the "Origin Pool with Weight and Priority" section, click "Edit Configuration" next to the origin pool.
+
+   .. image:: _static/edit-origin-pool-configuration.png
+      :width: 75%
+
+#. Under "Origins" find your previous "frontend-public" Origin pool and click on the pencil icon on the right under "Actions" and select "Edit"
+
+   .. image:: _static/screenshot-global-vip-edit-config-pools.png
+
+#. Change the selection of "Origin Pool" to "frontend-private" from "frontend-public" and click "Apply"
+   
+   .. image:: _static/change-origin-pool-public-to-private.png
 
 Task 1. Create WAF Policy
 -------------------------
@@ -162,34 +189,8 @@ Exercise 4: Performance and Security
    .. image:: _static/screenshot-global-vip-public-security-events-details.png
       :width: 100%
 
-Next we will demonstrate applying the same WAF Policy to your private end point.
+.. Next we will demonstrate applying the same WAF Policy to your private end point.
 
-#. Navigate the menu to go to "Manage" -> "HTTP Load Balancers" and look for the Load Balancer that you previously created.
-
-#. Click on the three dots "..." to the right of the name of your Load Balancer and select the "Manage Configuration" option.
-
-#. Click on the "Edit Configuration" in the far upper-right corner of the page.
-
-   .. image:: _static/edit-configuration-button.png
-      :width: 50%
-
-#. Select Origins in the left navigation pane and click on the frontend-private origin pool.
-
-   .. image:: _static/select-origin-pool.png
-      :width: 100%
-      
-#. In the "Origin Pool with Weight and Priority" section, click "Edit Configuration" next to the origin pool.
-
-   .. image:: _static/edit-origin-pool-configuration.png
-      :width: 75%
-
-#. Under "Origins" find your previous "frontend-public" Origin pool and click on the pencil icon on the right under "Actions" and select "Edit"
-
-   .. image:: _static/screenshot-global-vip-edit-config-pools.png
-
-#. Change the selection of "Origin Pool" to "frontend-private" from "frontend-public" and click "Apply"
-   
-   .. image:: _static/change-origin-pool-public-to-private.png
 
 
 
