@@ -1,7 +1,7 @@
 Lab 2: Option 2 - Self Guided WAF Deployment
 ======================================================================
 
-Prerequisites:
+Prerequisites: WE NEED TO REMOVE THIS
 
 * An account and namespace on Distributed Cloud
 * A deployment of the "[Agility 2022] F5XC Security" UDF blueprint in running state
