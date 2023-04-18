@@ -3,21 +3,17 @@ Lab 1: Create HTTP Load Balancer
 
 In this lab we will create an HTTP Load Balancer on F5 Distributed Cloud that will allow you to access an application running in AWS.
 
-We will connect via a secure tunnel through a Distributed Cloud Mesh node to an EC2 instance that does not have a Public IP.
-
 You will first create an origin pool for your frontend application in AWS.
 
 Afterwards you will create a HTTP Load Balancer that will reference your origin pool and expose the service on Distributed Cloud's Regional Edge.
 
-In the following lab we will add an additional "backend" resource that will allow us to connect to our "on-prem" site.
 
 .. image:: ../images/httplb-lab.png
 
 Regional Edge
 ~~~~~~~~~~~~~
 
-We have already deployed the UDF / AWS sites. These are considered a "Customer Edge (CE)" and they make use of a Regional Edge (RE) to communicate. (Each CE is associated with two REs.) REs are part of the Distributed Cloud Global Network that provides connectivity to services.
-
+The public and private origin servers has already been created in AWS instance. In this lab we will advertise these resources through Distributed Cloud Regional Edge HTTP load balancer.
 
 Exercise 1:  Public Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
