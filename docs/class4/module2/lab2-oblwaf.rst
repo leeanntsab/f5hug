@@ -39,7 +39,8 @@ Scaling application traffic, high availability, progressive application version 
 
 **Alternative Lab:**
 ~~~~~~~~~~~~~~~~~~~~
-If you get stuck or would prefer guided version, you can instead go to our Protecting a Public Endpoint lab: https://clouddocs.f5.com/training/community/f5xc/html/class1/lab1.html
+If you get stuck or would prefer guided version, choose Lab 1 Option 1 on the left or follow the lab here:  https://san-jose-user-group.readthedocs.io/en/latest/class4/module2/lab1-guidedwaf.html
+
 
 **(OPTIONAL) Fine Tuning a WAF Policy:**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
