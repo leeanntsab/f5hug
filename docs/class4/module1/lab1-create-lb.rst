@@ -125,7 +125,7 @@ The public demo app should look like the following:
 In this topology we are sending traffic to an AnyCast IP that is hosted in the F5 Distributed Cloud Regional Edge.
 
 We then connect to the AWS resource via it's Public IP address.  Next we will demonstrate how we 
-can securely connect to your private AWS resources via a Distributed Cloud Mesh node.
+can securely connect to your private resource. 
 
 Exercise 3: Private Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,11 +1,12 @@
 Lab 2: Option 2 - Self Guided WAF Deployment
 ======================================================================
 
-Prerequisites: WE NEED TO REMOVE THIS
+Prerequisites: 
 
 * An account and namespace on Distributed Cloud
 * A deployment of the "[Agility 2022] F5XC Security" UDF blueprint in running state
 * Completion of Lab 1, "Create HTTP Load Balancer"
+* Set the origin pool of the frontend HTTP load balancer back to frontend-public. 
 
 **Objective:**
 ~~~~~~~~~~~~~~
