@@ -1,7 +1,7 @@
 Module 2: Creating a WAF Policy
 =====================================
 
-The first part of the Lab will make use of F5 Distributed Cloud Simulators to emulate the process of setting up two different sites (one in AWS, one on premises)
+This secon dpart of the lab we will deploy a WAF policy to protect the front-public origin pool.
 
 .. toctree::
    :maxdepth: 1
