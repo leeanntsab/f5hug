@@ -1,15 +1,13 @@
-F5 Distributed Cloud WAF/WAAP Deployment Models¶
+F5 Distributed Cloud Introduction¶
 ==========================================================
 
-This Lab environment highlights some of the basic concepts of F5 Distributed Cloud WAAP.
+This Lab environment highlights some of the basic concepts of F5 Distributed Cloud .
 
-F5 Distributed Cloud’s SaaS Web Application Firewall (WAF) can help you mitigate application threats with an updated WAF engine that inherits the shared capabilities of F5 BIG-IP Advanced WAF, and NGINX App Protect. During this hands-on lab you will learn about the following:
+F5 Distributed Cloud’s SaaS platform can help you easily deploy applications and mitigate threats with an updated WAF engine that inherits the shared capabilities of F5 BIG-IP Advanced WAF, and NGINX App Protect. During this hands-on lab you will do the following:
 
-- F5 Distributed Cloud Platform for providing edge WAF and DDoS protection
-- Updates to F5 Distributed Cloud WAF engine that is powered by F5's WAF engine
-- Hands-on lab deploying F5 Distributed Cloud WAF 
-- Protecting existing Public IP resource via F5's Distributed Cloud WAF
-- Deploying F5 Distributed Cloud WAF into a cloud provider network (AWS) to protect internal Private IP resources
+- Create an HTTP Load Balancer using a Regional Edge (RE)
+- Create a WAF policy to protect the application
+- Test your deployment using SSL labs for security best practices
 
 .. toctree::
    :maxdepth: 1
