@@ -20,7 +20,11 @@ Exercise 1:  Public Origin Pool
 We will first create an Origin Pool that refers to the frontend application service running in our AWS site.
 
 
-#. Prior to beginning this section, make sure you have the name of your namespace (in the format *adjective-animal*). If you need it, it can be found in your URI path, between /namespaces/ and /sites/ as shown in this example …/namespaces/<namespace>/sites/…
+#. Prior to beginning this section, make sure you have the name of your namespace (in the format *adjective-animal*). To determine your namespace, click on Multi-Cloud App Connect from the Distributed Cloud console.  The namespace can be found in the URI path, between /namespaces/ and /sites/ as shown in this example …/namespaces/<namespace>/sites/…
+
+
+   .. image:: ../images/load-balancers-menu-aprilui.png
+       :width: 50%
 
    In the following example, the namespace is "select-weasel". Yours will be different.
 
