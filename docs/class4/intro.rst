@@ -1,4 +1,4 @@
-(Introduction): Access to the F5 Distributed Cloud Console
+Justin don't like the intro
 ================================================================
 
 Welcome to this F5 Distributed Cloud Lab. The following tasks will guide you through the initial 
