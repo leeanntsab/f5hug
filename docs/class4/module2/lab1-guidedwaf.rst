@@ -191,7 +191,10 @@ Exercise 4: Performance and Security
 
 .. Next we will demonstrate applying the same WAF Policy to your private end point.
 
-
+**(OPTIONAL) Fine Tuning a WAF Policy:**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you have completed the above exercises and wish to go further in your Distributed Cloud learning, feel free to work on the following lab on Fine Tuning a WAF Policy. This is optional.
+https://clouddocs.f5.com/training/community/f5xc/html/class1/lab4.html
 
 
 .. |app-context| image:: _static/app-context.png
