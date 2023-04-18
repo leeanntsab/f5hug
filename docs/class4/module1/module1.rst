@@ -1,7 +1,7 @@
 Module 1: Creating a HTTP Load Balancer
 =====================================
 
-The first part of the Lab will make use of F5 Distributed Cloud Simulators to emulate the process of setting up two different sites (one in AWS, one on premises)
+In this first lab we will create a HTTP load balancer to proxy traffic to a public and private backend origin servers which has already been created. 
 
 .. toctree::
    :maxdepth: 1
