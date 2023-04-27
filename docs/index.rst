@@ -1,7 +1,7 @@
-F5 San Jose User Group
+F5 Hawaii User Group
 ===================================
 
-Welcome to the |classbold| for San Jose User Group
+Welcome to the |classbold| for Hawaii User Group
 
 
 
